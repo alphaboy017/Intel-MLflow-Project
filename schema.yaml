@@ -1,0 +1,22 @@
+COLUMNS:
+  Date: str
+  Milk_Supply_Liters: int64
+  Downtime_Hours: float64
+  Milk_500ml_Demand: int64
+  Milk_500ml_Inventory: int64
+  Milk_1L_Demand: int64
+  Milk_1L_Inventory: int64
+  Butter_Demand: int64
+  Butter_Inventory: int64
+  Cheese_Demand: int64
+  Cheese_Inventory: int64
+  Yogurt_Demand: int64
+  Yogurt_Inventory: int64
+
+TARGET_COLUMNS:
+  - Milk_500ml_Demand
+  - Milk_1L_Demand
+  - Butter_Demand
+  - Cheese_Demand
+  - Yogurt_Demand
+  

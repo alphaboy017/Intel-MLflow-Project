@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Prediction Results</title>
+    </head>
+    <body>
+        <h2>Predicted Dairy Product Demand</h2>
+        {% if prediction %}
+        <table border="1" cellpadding="8">
+            <tr><th>Product</th><th>Predicted Demand</th></tr>
+            {% for product, value in prediction.items() %}
+            <tr><td>{{ product }}</td><td>{{ value|round(2) }}</td></tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>No prediction available.</p>
+        {% endif %}
+        <br>
+        <a href="/">Back to Home</a>
+    </body>
+</html>
